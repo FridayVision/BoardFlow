@@ -6,5 +6,5 @@ def true_block():
 
 
 if __name__ == "__main__":
-    if not true_block():
+    if true_block():
         hello_world()
