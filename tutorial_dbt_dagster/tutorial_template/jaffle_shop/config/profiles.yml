@@ -1,0 +1,10 @@
+## Refer to Using dbt with Dagster, part one for info about this file:
+## https://docs.dagster.io/integrations/dbt/using-dbt-with-dagster/part-one#step-2-create-a-duckdb-profile
+
+jaffle_shop:  #name of the dbt model or key prefix
+  target: local  # use the 'local' config for loading into target
+  outputs:
+    local:
+      type: duckdb
+      path: tutorial.duckdb  # This line specifies the path to the DuckDB database file where the output will be stored. The file will likely be named "tutorial.duckdb" and will contain the transformed data from the dbt model.
+      schema: jaffle_shop # name of the schema where the transformed data will be stored

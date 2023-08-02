@@ -1,0 +1,9 @@
+## defines the location of tables containing source data for dbt
+
+version: 2
+
+sources:
+  - name: jaffle_shop
+    tables:
+      - name: orders_raw
+      - name: customers_raw
