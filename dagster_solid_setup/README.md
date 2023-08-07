@@ -17,19 +17,19 @@ View this example in the Dagster docs at [Fully Featured Project](https://docs.d
 Bootstrap your own Dagster project with this example:
 
 ```bash
-dagster project from-example --name my-dagster-project --example project_fully_featured
+dagster project from-example --name dagster_solid_setup --example project_fully_featured
 ```
 
 To install this example and its Python dependencies, run:
 
 ```bash
-pip install -e ".[dev]"
+pip install -e .
 ```
 
 Once you've done this, you can run:
 
 ```
-dagit
+dagster dev
 ```
 
 to view this example in Dagster's UI, Dagit.
